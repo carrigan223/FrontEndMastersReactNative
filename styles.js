@@ -1,16 +1,37 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-  },// this is setting our parent safeareaview
-    // with a flex of 1 so we can access flex in our children
-
   container: {
+    paddingTop: 50,
+    paddingHorizontal: 10,
+  },
+  heading: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  text: {
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  box: {
+    padding: 10,
+    borderRadius: 3,
+    marginBottom: 10,
     alignItems: 'center',
-    backgroundColor: 'pink',
-    flex: 1,
     justifyContent: 'center',
+  },
+  cyan: {
+    backgroundColor: '#2aa198',
+  },
+  blue: {
+    backgroundColor: '#268bd2',
+  },
+  orange: {
+    backgroundColor: '#cb4b16',
+  },
+  magenta: {
+    backgroundColor: '#d33682',
   },
 });
 
