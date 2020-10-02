@@ -10,17 +10,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
   },
-  text: {
-    fontWeight: 'bold',
-    color: 'white',
-  },
-  box: {
-    padding: 10,
-    borderRadius: 3,
-    marginBottom: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   cyan: {
     backgroundColor: '#2aa198',
   },
