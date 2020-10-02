@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
 import styles from './styles';
+import ColorBox from './components/ColorBox';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Text style={styles.text}>Orange #cb4b16</Text>
         </View>
       </View>
+      <ColorBox />
     </SafeAreaView>
   );
 };
