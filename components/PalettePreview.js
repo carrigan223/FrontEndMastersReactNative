@@ -1,7 +1,6 @@
 import React from 'react';
 import { FlatList, View, Text, TouchableOpacity } from 'react-native';
 import styles from '../styles';
-import { COLORS, RAINBOW, FRONTEND_MASTERS } from '../data/ColorArrays';
 
 const PalettePreview = ({ palette, onPress }) => {
   console.log(palette);
