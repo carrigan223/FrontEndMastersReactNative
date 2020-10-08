@@ -1,9 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, Text, TouchableOpacity } from 'react-native';
 import styles from '../styles';
 import PalettePreview from '../components/PalettePreview';
 import { RefreshControl } from 'react-native';
-import { color } from 'react-native-reanimated';
 
 const Home = ({ navigation }) => {
   //below we are fetching the color palette api and then seting
@@ -34,12 +33,13 @@ const Home = ({ navigation }) => {
 
   useEffect(() => {
     fetchColorPalettes();
-  }, [fetchColorPalettes]);
-
-  console.log(`this is ${palettes}`);
+  }, []);
 
   return (
     <View style={styles.screenBack}>
+      <TouchableOpacity onPress={() => navigation.navigate('AddNewPalette')}>
+        <Text style={styles.addButton}>Add a color scheme</Text>
+      </TouchableOpacity>
       <FlatList
         style={styles.container}
         refreshControl={

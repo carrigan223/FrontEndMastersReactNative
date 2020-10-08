@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop:10,
+    paddingTop: 10,
     paddingHorizontal: 10,
   },
   heading: {
@@ -38,9 +38,14 @@ const styles = StyleSheet.create({
   },
   screenBack: {
     backgroundColor: 'white',
-  }
+  },
+  addButton: {
+    color: 'teal',
+    fontWeight: 'bold',
+    fontSize: 23,
+    paddingTop: 10,
+    paddingHorizontal: 10,
+  },
 });
-
-
 
 export default styles;
