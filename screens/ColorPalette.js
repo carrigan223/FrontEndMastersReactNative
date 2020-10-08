@@ -10,6 +10,7 @@ import ColorBox from '../components/ColorBox';
 // by useing navigation props. We then use color box component
 //to uniformly display our various colors
 const ColorPalette = ({ route }) => {
+  
   return (
     <FlatList
       style={styles.container}
