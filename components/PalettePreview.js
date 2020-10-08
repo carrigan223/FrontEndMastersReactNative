@@ -9,7 +9,7 @@ const PalettePreview = ({ palette, onPress }) => {
       <Text style={styles.heading}>{palette.paletteName}</Text>
       <FlatList
         style={styles.list}
-        data={palette.colors.slice(0, 3)}
+        data={palette.colors.slice(0, 5)}
         keyExtractor={(item) => item.colorName}
         renderItem={({ item }) => (
           <View style={[styles.color, { backgroundColor: item.hexCode }]} />

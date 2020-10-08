@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 import styles from '../styles';
 import ColorBox from '../components/ColorBox';
 
@@ -10,16 +10,17 @@ import ColorBox from '../components/ColorBox';
 // by useing navigation props. We then use color box component
 //to uniformly display our various colors
 const ColorPalette = ({ route }) => {
-  
   return (
-    <FlatList
-      style={styles.container}
-      data={route.params.colors}
-      keyExtractor={(item) => item.hexCode}
-      renderItem={({ item }) => (
-        <ColorBox colorName={item.colorName} hexCode={item.hexCode} />
-      )}
-    />
+    <View style={styles.screenBack}>
+      <FlatList
+        style={styles.container}
+        data={route.params.colors}
+        keyExtractor={(item) => item.hexCode}
+        renderItem={({ item }) => (
+          <ColorBox colorName={item.colorName} hexCode={item.hexCode} />
+        )}
+      />
+    </View>
   );
 };
 
