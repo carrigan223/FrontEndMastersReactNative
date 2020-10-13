@@ -46,6 +46,37 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingHorizontal: 10,
   },
+  modalContainer: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  modalInput: {
+    borderWidth: 1,
+    borderColor: 'grey',
+    padding: 10,
+    marginVertical: 10,
+    borderRadius: 5,
+    fontSize: 18,
+  },
+  submitButton: {
+    alignItems: 'center',
+    backgroundColor: 'teal',
+    height: 40,
+    justifyContent: "center",
+    borderRadius: 5,
+  },
+  submitText: {
+    color: 'white',
+    fontWeight: "bold",
+  },
+  modalList: {
+    marginBottom: 10,
+  },
+  wrapButton: {
+    height: 100,
+    marginHorizontal: 10
+
+  },
 });
 
 export default styles;
